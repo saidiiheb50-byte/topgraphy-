@@ -1,8 +1,8 @@
 :root {
   --blue-dark: #0b3c5d;
   --blue: #1e90ff;
-  --turquoise: #2ec4b6;
-  --bg: #f5f7fa;
+  --blue-accent: #3aa0ff;
+  --bg: #f1f6ff;
   --text: #1f2933;
   --muted: #4b5563;
   --card: #ffffff;
@@ -129,8 +129,8 @@ p {
 }
 
 .btn.primary:hover {
-  background: var(--turquoise);
-  border-color: var(--turquoise);
+  background: var(--blue-accent);
+  border-color: var(--blue-accent);
 }
 
 .btn.ghost {
@@ -139,7 +139,7 @@ p {
 }
 
 .btn.ghost:hover {
-  background: rgba(30, 144, 255, 0.08);
+  background: rgba(30, 144, 255, 0.12);
 }
 
 .meta {
@@ -207,7 +207,7 @@ main {
   margin-top: 8px;
   padding: 6px 10px;
   border-radius: 20px;
-  background: rgba(30, 144, 255, 0.1);
+  background: rgba(30, 144, 255, 0.14);
   color: var(--blue-dark);
   font-weight: 600;
   font-size: 13px;
@@ -235,7 +235,7 @@ main {
 }
 
 .before-after {
-  background: linear-gradient(135deg, rgba(30,144,255,0.12), rgba(46,196,182,0.12));
+  background: linear-gradient(135deg, rgba(30,144,255,0.14), rgba(58,160,255,0.16));
   border-radius: 12px;
   height: 160px;
   position: relative;
@@ -257,7 +257,7 @@ main {
 .badge {
   display: inline-block;
   padding: 8px 12px;
-  background: rgba(30, 144, 255, 0.14);
+  background: rgba(30, 144, 255, 0.16);
   border-radius: 10px;
   font-weight: 700;
 }

@@ -2,11 +2,11 @@
   --blue-dark: #0b3c5d;
   --blue: #1e90ff;
   --blue-accent: #3aa0ff;
-  --bg: #f1f6ff;
-  --text: #1f2933;
-  --muted: #4b5563;
-  --card: #ffffff;
-  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --bg: #eaf2ff;
+  --text: #0e2748;
+  --muted: #3f5675;
+  --card: #f9fbff;
+  --shadow: 0 8px 24px rgba(11, 60, 93, 0.08);
 }
 
 * {
@@ -154,7 +154,7 @@ p {
   border-radius: 16px;
   padding: 16px;
   box-shadow: var(--shadow);
-  border: 1px solid #e5e7eb;
+  border: 1px solid #d6e6ff;
 }
 
 #map {
@@ -171,7 +171,7 @@ main {
 
 .section {
   padding: 56px 28px;
-  background: #fff;
+  background: #fdfdff;
 }
 
 .section.light {
@@ -199,7 +199,7 @@ main {
   padding: 18px;
   border-radius: 12px;
   box-shadow: var(--shadow);
-  border: 1px solid #e5e7eb;
+  border: 1px solid #d6e6ff;
 }
 
 .tag {
@@ -222,10 +222,10 @@ main {
   display: grid;
   gap: 12px;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  background: #fff;
+  background: #fdfdff;
   padding: 18px;
   border-radius: 12px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #d6e6ff;
   box-shadow: var(--shadow);
 }
 
@@ -263,10 +263,10 @@ main {
 }
 
 .contact-form {
-  background: #fff;
+  background: #fdfdff;
   padding: 20px;
   border-radius: 12px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #d6e6ff;
   box-shadow: var(--shadow);
   max-width: 780px;
 }

@@ -1,9 +1,9 @@
 const i18n = {
   fr: {
-    nav: { services: 'Services', projects: 'Projets', tech: 'Tech & Équipements', contact: 'Contact' },
+    nav: { services: 'Services', projects: 'Projets', gallery: 'Galerie', tech: 'Tech & Équipements', contact: 'Contact' },
     hero: {
       badge: 'Précision · Cartographie · 3D',
-      title: 'Ingénieur topographe spécialisé en levés, cartographie et modèles 3D.',
+      title: 'BETLAB · Ingénieur topographe spécialisé en levés, cartographie et modèles 3D.',
       lead: "Je livre des plans exploitables, orthophotos, DEM/DTM et analyses géospatiales pour vos projets d'infrastructure et d'immobilier.",
       meta1: 'Réponse sous 24h',
       meta2: 'Certifié / agréé',
@@ -43,6 +43,15 @@ const i18n = {
         badge: 'CAD prêt BIM'
       }
     },
+    gallery: {
+      badge: 'Galerie terrain',
+      title: 'Images de projets topographiques',
+      desc: 'Terrain, drone, reliefs et livrables visuels pour BETLAB.',
+      g1: { title: 'Orthophoto drone', text: 'Chantier urbain cartographié en haute résolution.' },
+      g2: { title: 'Relief & courbes', text: 'Modèle 3D avec courbes de niveau pour terrassement.' },
+      g3: { title: 'Station totale', text: 'Implantations et levés détaillés en chantier.' },
+      g4: { title: 'Inspection drone', text: 'Survol rapide pour volumes et contrôles visuels.' }
+    },
     tech: {
       badge: 'Capacités',
       title: 'Technologies & Équipements',
@@ -72,10 +81,10 @@ const i18n = {
     }
   },
   ar: {
-    nav: { services: 'الخدمات', projects: 'المشاريع', tech: 'التقنيات والمعدات', contact: 'اتصال' },
+    nav: { services: 'الخدمات', projects: 'المشاريع', gallery: 'المعرض', tech: 'التقنيات والمعدات', contact: 'اتصال' },
     hero: {
       badge: 'دقة · خرائط · ثلاثي الأبعاد',
-      title: 'مهندس طبوغرافيا متخصص في الرفع المساحي والخرائط والنمذجة ثلاثية الأبعاد.',
+      title: 'BETLAB · مهندس طبوغرافيا متخصص في الرفع المساحي والخرائط والنمذجة ثلاثية الأبعاد.',
       lead: 'أوفر مخططات جاهزة للاستخدام، صوراً مصححة، نماذج ارتفاع رقمية وتحليلات مكانية لمشاريع البنية التحتية والعقارات.',
       meta1: 'رد خلال 24 ساعة',
       meta2: 'معتمد / مرخّص',
@@ -114,6 +123,15 @@ const i18n = {
         li3: 'الفائدة: دون إعادة عمل ميداني',
         badge: 'CAD جاهز لـ BIM'
       }
+    },
+    gallery: {
+      badge: 'المعرض الميداني',
+      title: 'صور مشاريع طبوغرافية',
+      desc: 'ميدان، درون، تضاريس ومخرجات بصرية لـ BETLAB.',
+      g1: { title: 'صورة مصححة بالدرون', text: 'موقع حضري مصوَّر بدقة عالية.' },
+      g2: { title: 'تضاريس وخطوط كنتور', text: 'نموذج ثلاثي الأبعاد مع خطوط مستوى للأشغال.' },
+      g3: { title: 'محطة شاملة', text: 'توقيع وتمركز ورفع تفصيلي في الموقع.' },
+      g4: { title: 'تفتيش بالدرون', text: 'تحليق سريع للأحجام والفحص البصري.' }
     },
     tech: {
       badge: 'القدرات',
@@ -190,4 +208,5 @@ document.addEventListener('DOMContentLoaded', () => {
   applyTranslations('fr');
   initMap();
 });
+
 

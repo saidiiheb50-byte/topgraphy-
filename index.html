@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>BETLAB | Bureau d'études topographiques</title>
+  <title>BETLAB | Bureau d’études topographiques Laabidi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,219 +14,181 @@
   <header class="topbar">
     <div class="logo">BETLAB</div>
     <nav>
-      <a href="#services" data-i18n="nav.services">Services</a>
-      <a href="#projects" data-i18n="nav.projects">Projets</a>
-      <a href="#gallery" data-i18n="nav.gallery">Galerie</a>
-      <a href="#tech" data-i18n="nav.tech">Tech & Équipements</a>
-      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a href="#services">Compétences</a>
+      <a href="#why">Pourquoi BETLAB</a>
+      <a href="#mission">Mission</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <div class="lang-switch">
-      <button id="lang-fr" class="active">FR</button>
-      <button id="lang-ar">AR</button>
-    </div>
   </header>
+
+  <div class="drone-flight" aria-hidden="true">
+    <svg viewBox="0 0 180 90" role="img" aria-hidden="true">
+      <g fill="none" stroke="#0f2949" stroke-width="4" stroke-linecap="round">
+        <line x1="30" y1="22" x2="60" y2="40" />
+        <line x1="150" y1="22" x2="120" y2="40" />
+        <line x1="30" y1="68" x2="60" y2="50" />
+        <line x1="150" y1="68" x2="120" y2="50" />
+      </g>
+      <g class="prop" fill="#dce8ff" stroke="#1f6fe2" stroke-width="3">
+        <circle cx="30" cy="22" r="14" />
+        <circle cx="150" cy="22" r="14" />
+        <circle cx="30" cy="68" r="14" />
+        <circle cx="150" cy="68" r="14" />
+      </g>
+      <rect x="60" y="30" rx="12" ry="12" width="60" height="32" fill="#1f6fe2" stroke="#0c2f54" stroke-width="4" />
+      <rect x="72" y="40" rx="8" ry="8" width="36" height="18" fill="#f7fbff" stroke="#0c2f54" stroke-width="3" />
+      <circle cx="90" cy="68" r="10" fill="#0c2f54" />
+      <circle cx="90" cy="68" r="5" fill="#7bb4ff" />
+      <path d="M75 68 Q90 80 105 68" fill="none" stroke="#0c2f54" stroke-width="4" stroke-linecap="round" />
+    </svg>
+  </div>
 
   <main>
     <section class="hero hero-image" id="home">
       <div class="hero-text">
         <div class="brand-chip">BETLAB</div>
-        <p class="eyebrow" data-i18n="hero.badge">Précision · Cartographie · 3D</p>
-        <h1 data-i18n="hero.title">BETLAB · Ingénieur topographe spécialisé en levés, cartographie et modèles 3D.</h1>
-        <p class="lead" data-i18n="hero.lead">Je livre des plans exploitables, orthophotos, DEM/DTM et analyses géospatiales pour vos projets d'infrastructure et d'immobilier.</p>
+        <p class="eyebrow">Précision · Cartographie · 3D</p>
+        <h1>BETLAB - Bureau d'Etudes Topographiques, cartographiques et bathymétriques LABIDI</h1>
+        <p class="lead">Votre partenaire en solutions topographiques et géospatiales.</p>
+        <p class="lead">BETLAB est un bureau d’études spécialisé dans la topographie, la géomatique et l’acquisition de données terrain. Nous accompagnons les entreprises, administrations, bureaux d’ingénierie et maîtres d’ouvrage dans toutes les phases de leurs projets, grâce à des prestations précises, fiables et conformes aux normes en vigueur.</p>
         <div class="cta-row">
-          <a class="btn primary" href="#contact" data-i18n="cta.quote">Demander un devis</a>
-          <a class="btn ghost" href="#projects" data-i18n="cta.projects">Voir mes projets</a>
+          <a class="btn primary" href="#contact">Demander un devis</a>
+          <a class="btn ghost" href="#services">Découvrir les services</a>
         </div>
         <div class="meta">
-          <span data-i18n="hero.meta1">Réponse sous 24h</span>
-          <span data-i18n="hero.meta2">Certifié / agréé</span>
-          <span data-i18n="hero.meta3">Couverture nationale</span>
+          <span>Précision GNSS/RTK et station totale</span>
+          <span>Livrables conformes aux normes</span>
+          <span>Réponse sous 24h</span>
         </div>
       </div>
       <div class="hero-visual">
         <div class="hero-card">
-          <p data-i18n="hero.mapTitle">Carte drone + MNT</p>
+          <p>Exemple de carte drone + MNT</p>
           <div id="map"></div>
-          <small data-i18n="hero.mapNote">Exemple de relevé présenté via Leaflet.</small>
+          <small>Visualisation Leaflet d’un relevé type.</small>
         </div>
       </div>
     </section>
 
     <section class="section cards" id="services">
       <div class="section-header">
-        <p class="eyebrow" data-i18n="services.badge">Compétences</p>
-        <h2 data-i18n="services.title">Services principaux</h2>
-        <p class="muted" data-i18n="services.desc">Des levés fiables pour routes, bâtiments, aménagements et énergie.</p>
+        <p class="eyebrow">Nos domaines de compétence</p>
+        <h2>Compétences clés</h2>
+        <p class="muted">Levés, implantation, modélisation 3D, bathymétrie et drone.</p>
       </div>
       <div class="grid">
         <article class="card">
-          <h3 data-i18n="services.s1.title">Levés topographiques</h3>
-          <p data-i18n="services.s1.text">Construction, routes, immobilier. Précision centimétrique.</p>
-          <span class="tag">GNSS / Station totale</span>
+          <h3>Levés topographiques</h3>
+          <ul>
+            <li>Levé planimétrique et altimétrique</li>
+            <li>Plans topographiques détaillés</li>
+            <li>Levés par GPS/GNSS et station totale</li>
+          </ul>
         </article>
         <article class="card">
-          <h3 data-i18n="services.s2.title">Photogrammétrie drone</h3>
-          <p data-i18n="services.s2.text">Orthophotos, modèles 3D, inspections visuelles rapides.</p>
-          <span class="tag">Drone / Pix4D</span>
+          <h3>Implantation et suivi de chantiers</h3>
+          <ul>
+            <li>Implantation de bâtiments, routes, réseaux</li>
+            <li>Contrôle d’exécution et suivi d’avancement</li>
+          </ul>
         </article>
         <article class="card">
-          <h3 data-i18n="services.s3.title">Modèles 3D & DEM/DTM</h3>
-          <p data-i18n="services.s3.text">Calculs de volumes, pentes, terrassements et cubatures.</p>
-          <span class="tag">CAD / GIS</span>
+          <h3>Modélisation 3D & Traitement des données</h3>
+          <ul>
+            <li>Modèles numériques de terrain (MNT/MNE)</li>
+            <li>Orthophotos</li>
+            <li>Analyse et restitution 3D</li>
+          </ul>
         </article>
         <article class="card">
-          <h3 data-i18n="services.s4.title">Bornage & limites</h3>
-          <p data-i18n="services.s4.text">Délimitation de propriétés, plans de bornage conformes.</p>
-          <span class="tag">Cadastre</span>
+          <h3>Bathymétrie</h3>
+          <ul>
+            <li>Levés hydrographiques</li>
+            <li>Inspection et cartographie des zones portuaires et fluviales</li>
+          </ul>
         </article>
         <article class="card">
-          <h3 data-i18n="services.s5.title">Hydrographie</h3>
-          <p data-i18n="services.s5.text">Levés bathymétriques pour ports, retenues et ouvrages.</p>
-          <span class="tag">Capteur bathy</span>
-        </article>
-        <article class="card">
-          <h3 data-i18n="services.s6.title">Plans & digitalisation</h3>
-          <p data-i18n="services.s6.text">Création CAD, mise à jour de plans, cartographie précise.</p>
-          <span class="tag">AutoCAD / Civil 3D</span>
+          <h3>Levé par drone</h3>
+          <p>Photogrammétrie par drone pour accélérer l’acquisition des données, améliorer la précision et optimiser les coûts des projets de grande superficie.</p>
         </article>
       </div>
     </section>
 
-    <section class="section light" id="projects">
+    <section class="section light" id="why">
       <div class="section-header">
-        <p class="eyebrow" data-i18n="projects.badge">Réalisations</p>
-        <h2 data-i18n="projects.title">Projets clés</h2>
-        <p class="muted" data-i18n="projects.desc">Études de cas avec méthodes, livrables et gains mesurables.</p>
-      </div>
-      <div class="cases">
-        <div class="case">
-          <div class="case-text">
-            <h3 data-i18n="projects.c1.title">Route express - Modèle 3D</h3>
-            <ul>
-              <li data-i18n="projects.c1.li1">Méthode : GNSS RTK + drone</li>
-              <li data-i18n="projects.c1.li2">Livrables : Orthophoto, DEM, CAD</li>
-              <li data-i18n="projects.c1.li3">Gain : précision 2 cm, délai -30%</li>
-            </ul>
-          </div>
-          <div class="case-visual">
-            <div class="before-after">
-              <div class="label" data-i18n="projects.before">Avant</div>
-              <div class="label" data-i18n="projects.after">Après</div>
-            </div>
-          </div>
-        </div>
-        <div class="case">
-          <div class="case-text">
-            <h3 data-i18n="projects.c2.title">Lotissement - Plan topo</h3>
-            <ul>
-              <li data-i18n="projects.c2.li1">Méthode : Station totale</li>
-              <li data-i18n="projects.c2.li2">Livrables : Plan DWG + courbes</li>
-              <li data-i18n="projects.c2.li3">Gain : zéro reprise terrain</li>
-            </ul>
-          </div>
-          <div class="case-visual">
-            <div class="badge" data-i18n="projects.c2.badge">CAD prêt BIM</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="gallery">
-      <div class="section-header">
-        <p class="eyebrow" data-i18n="gallery.badge">Galerie terrain</p>
-        <h2 data-i18n="gallery.title">Images de projets topographiques</h2>
-        <p class="muted" data-i18n="gallery.desc">Terrain, drone, reliefs et livrables visuels pour BETLAB.</p>
-      </div>
-      <div class="gallery-grid">
-        <article class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1200&q=80" alt="Topographie drone">
-          <div class="gallery-overlay">
-            <h3 data-i18n="gallery.g1.title">Orthophoto drone</h3>
-            <p data-i18n="gallery.g1.text">Chantier urbain cartographié en haute résolution.</p>
-          </div>
-        </article>
-        <article class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=1200&q=80" alt="Relief 3D">
-          <div class="gallery-overlay">
-            <h3 data-i18n="gallery.g2.title">Relief & courbes</h3>
-            <p data-i18n="gallery.g2.text">Modèle 3D avec courbes de niveau pour terrassement.</p>
-          </div>
-        </article>
-        <article class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" alt="Station totale">
-          <div class="gallery-overlay">
-            <h3 data-i18n="gallery.g3.title">Station totale</h3>
-            <p data-i18n="gallery.g3.text">Implantations et levés détaillés en chantier.</p>
-          </div>
-        </article>
-        <article class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Drone topographique">
-          <div class="gallery-overlay">
-            <h3 data-i18n="gallery.g4.title">Inspection drone</h3>
-            <p data-i18n="gallery.g4.text">Survol rapide pour volumes et contrôles visuels.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="tech">
-      <div class="section-header">
-        <p class="eyebrow" data-i18n="tech.badge">Capacités</p>
-        <h2 data-i18n="tech.title">Technologies & Équipements</h2>
-        <p class="muted" data-i18n="tech.desc">Matériel de précision et logiciels métier pour des livrables fiables.</p>
+        <p class="eyebrow">Pourquoi choisir BETLAB ?</p>
+        <h2>Des garanties pour vos projets</h2>
+        <p class="muted">Précision, réactivité et accompagnement complet.</p>
       </div>
       <div class="grid">
         <article class="card">
-          <h3 data-i18n="tech.e1.title">Station totale</h3>
-          <p data-i18n="tech.e1.text">Implantations, levés détaillés, alignements précis.</p>
+          <h3>Précision garantie</h3>
+          <p>Équipements de dernière génération et protocoles éprouvés.</p>
         </article>
         <article class="card">
-          <h3 data-i18n="tech.e2.title">GPS/GNSS RTK</h3>
-          <p data-i18n="tech.e2.text">Précision centimétrique en temps réel sur grands linéaires.</p>
+          <h3>Réactivité</h3>
+          <p>Respect des délais et disponibilité terrain/études.</p>
         </article>
         <article class="card">
-          <h3 data-i18n="tech.e3.title">Drones</h3>
-          <p data-i18n="tech.e3.text">Orthophotos haute résolution, volumes, inspections rapides.</p>
+          <h3>Expertise projets publics et privés</h3>
+          <p>Expérience multi-secteurs : infrastructures, aménagement, énergie, immobilier.</p>
         </article>
         <article class="card">
-          <h3 data-i18n="tech.e4.title">Logiciels</h3>
-          <p data-i18n="tech.e4.text">AutoCAD, Civil 3D, QGIS/ArcGIS, Pix4D, Revit, CloudCompare.</p>
+          <h3>Solutions adaptées</h3>
+          <p>Approche sur mesure pour chaque mission et livrables exploitables.</p>
         </article>
+        <article class="card">
+          <h3>Accompagnement complet</h3>
+          <p>Du terrain à la livraison finale des plans et modèles 3D.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="mission">
+      <div class="section-header">
+        <p class="eyebrow">Notre mission</p>
+        <h2>Données fiables pour vos décisions</h2>
+        <p class="muted">Fournir des données topographiques claires et exploitables pour concevoir, construire et contrôler vos projets en toute confiance.</p>
+      </div>
+      <p>Chez BETLAB, nous nous engageons à fournir des données topographiques fiables, claires et exploitables, permettant à nos partenaires de concevoir, construire et contrôler leurs projets en toute confiance.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#contact">Planifier un échange</a>
+        <a class="btn ghost" href="#services">Voir les compétences</a>
       </div>
     </section>
 
     <section class="section light" id="contact">
       <div class="section-header">
-        <p class="eyebrow" data-i18n="contact.badge">Contact</p>
-        <h2 data-i18n="contact.title">Demander un devis</h2>
-        <p class="muted" data-i18n="contact.desc">Ajoutez vos plans ou précisez la surface, je réponds sous 24h.</p>
+        <p class="eyebrow">Contact</p>
+        <h2>Demander un devis</h2>
+        <p class="muted">Ajoutez vos plans ou précisez la surface, nous répondons sous 24h.</p>
       </div>
       <form class="contact-form">
         <div class="form-row">
-          <label data-i18n="form.name">Nom / Entreprise</label>
+          <label>Nom / Entreprise</label>
           <input type="text" name="name" placeholder="Nom">
         </div>
         <div class="form-row two">
           <div>
-            <label data-i18n="form.email">Email</label>
+            <label>Email</label>
             <input type="email" name="email" placeholder="email@exemple.com">
           </div>
           <div>
-            <label data-i18n="form.phone">Téléphone / WhatsApp</label>
-            <input type="tel" name="phone" placeholder="+33 ...">
+            <label>Téléphone / WhatsApp</label>
+            <input type="tel" name="phone" placeholder="98 919 989">
           </div>
         </div>
         <div class="form-row">
-          <label data-i18n="form.project">Type de projet</label>
+          <label>Type de projet</label>
           <input type="text" name="project" placeholder="Route, lotissement, bâtiment...">
         </div>
         <div class="form-row">
-          <label data-i18n="form.details">Détails / surface / délai</label>
+          <label>Détails / surface / délai</label>
           <textarea name="details" rows="3" placeholder="Surface, localisation, échéance..."></textarea>
         </div>
         <div class="form-row actions">
-          <button type="submit" class="btn primary" data-i18n="cta.quote">Demander un devis</button>
-          <a class="btn ghost" href="https://wa.me/" target="_blank" rel="noreferrer" data-i18n="contact.whatsapp">WhatsApp direct</a>
+          <button type="submit" class="btn primary">Demander un devis</button>
+          <a class="btn ghost" href="https://wa.me/98919989" target="_blank" rel="noreferrer">WhatsApp direct</a>
         </div>
       </form>
     </section>
@@ -236,22 +198,22 @@
     <div class="footer-grid">
       <div>
         <div class="logo">BETLAB</div>
-        <p data-i18n="footer.text">Topographie de précision, livrables exploitables, réponse rapide.</p>
+        <p>Topographie de précision, livrables exploitables, réponse rapide.</p>
       </div>
       <div>
-        <h4 data-i18n="footer.links">Liens</h4>
+        <h4>Liens</h4>
         <ul>
-          <li><a href="#services" data-i18n="nav.services">Services</a></li>
-          <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
-          <li><a href="#gallery" data-i18n="nav.gallery">Galerie</a></li>
-          <li><a href="#tech" data-i18n="nav.tech">Tech</a></li>
-          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Pourquoi BETLAB</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4 data-i18n="footer.contact">Contact</h4>
-        <p>Email : contact@example.com</p>
-        <p>WhatsApp : +33 6 00 00 00 00</p>
+        <h4>Contact</h4>
+        <p>Email : contact.betlab@yahoo.com</p>
+        <p>Tél / WhatsApp : 98 919 989</p>
+        <p>Fax : 78 450 643</p>
       </div>
     </div>
   </footer>
@@ -260,4 +222,3 @@
   <script src="app.js"></script>
 </body>
 </html>
-
